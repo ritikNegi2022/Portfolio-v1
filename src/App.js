@@ -17,12 +17,12 @@ function App() {
     <ThemeContext>
       <div className={`${classes.mainContainer}`}>
         <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/about_me" element={<AboutMe />}></Route>
-          <Route path="/contacts" element={<Contacts />}></Route>
-          <Route path="/projects" element={<Projects />}></Route>
-        </Routes>
+          <Routes>
+            <Route  path="/" element={<Home />}></Route>
+            <Route path="/about_me" element={<AboutMe />}></Route>
+            <Route path="/contacts" element={<Contacts />}></Route>
+            <Route path="/projects" element={<Projects />}></Route>
+          </Routes>
         <Footer />
       </div>
     </ThemeContext>

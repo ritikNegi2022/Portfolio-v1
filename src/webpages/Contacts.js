@@ -21,7 +21,11 @@ const Contacts = () => {
             >
               {`< Instagram DM />`}
             </h1>
-            <a href="https://www.instagram.com/ritik_negi2002/" target="_blank">
+            <a
+              href="https://www.instagram.com/ritik_negi2002/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img className={`${classes.linkImage}`} src={instagramLogo} />
             </a>
             <h1>

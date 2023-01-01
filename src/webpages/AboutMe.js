@@ -63,7 +63,7 @@ const AboutMe = () => {
               >{`< Future objectives />`}</span>{" "}
               I'm pursuing
             </h1>
-            <p>
+
               <ul className={`${classes.list}`}>
                 <li>
                   {" "}
@@ -100,7 +100,7 @@ const AboutMe = () => {
                   still updating my list
                 </li>
               </ul>
-            </p>
+
           </div>
           <div className={classes.image}>
             <img src={picThree} alt="" />

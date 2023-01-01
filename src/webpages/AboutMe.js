@@ -1,5 +1,7 @@
 import classes from "./AboutMe.module.css";
-import profile from "../assets/Images/profile.jpg";
+import picOne from "../assets/Images/pic_1.jpg";
+import picTwo from "../assets/Images/pic_2.jpg";
+import picThree from "../assets/Images/pic_3.jpg";
 import ThemeCtx from "../context/Theme-context";
 import { useContext } from "react";
 
@@ -25,7 +27,7 @@ const AboutMe = () => {
             </p>
           </div>
           <div className={classes.image}>
-            <img src={profile} alt="" />
+            <img src={picOne} alt="" />
           </div>
         </section>
         <section className={classes.section}>
@@ -48,7 +50,7 @@ const AboutMe = () => {
             </p>
           </div>
           <div className={classes.image}>
-            <img src={profile} alt="" />
+            <img src={picTwo} alt="" />
           </div>
         </section>
         <section className={classes.section}>
@@ -101,7 +103,7 @@ const AboutMe = () => {
             </p>
           </div>
           <div className={classes.image}>
-            <img src={profile} alt="" />
+            <img src={picThree} alt="" />
           </div>
         </section>{" "}
       </div>

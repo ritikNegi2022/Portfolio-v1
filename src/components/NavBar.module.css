@@ -1,0 +1,102 @@
+.navContainer{
+    width: 100%;
+    padding-bottom: 3rem;
+}
+.navBarContainer{
+    display: fixed;
+    top: 0;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.firstRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 90%;
+}
+.firstRow > h1{
+    font-size: clamp(1rem, 5vw + .2rem, 2rem);
+}
+.linkButton{
+    font-size: clamp(1rem, 5vw + .2rem, 2rem);
+    font-weight: bold;
+    z-index: 10;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.linkButton:hover{
+    color: red;
+    text-shadow: 0 0 3px black;
+}
+.secondRow{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.secondRow > h2:first-child{
+    font-size: clamp(1rem, 3vw + .02rem, 2rem);
+    transform: translateX(-20%);
+}
+.arrowContainer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.arrow{
+    color: red;
+    position: relative;
+    bottom: 50%;
+    left: 0;
+    font-size: clamp(2rem, 5vw + .2rem, 5rem);
+    z-index: -10;
+    animation: arrow;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes arrow{
+    from{
+        transform: rotate(120deg);
+    }
+    to{
+        transform: rotate(145deg);
+    }
+}
+.thirdRow{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    transform: translateX(200%);
+    transition: transform .5s ease-in-out;
+}
+.visible{
+    transform: translateX(0);
+}
+.thirdRow > *{
+    font-size: clamp(.9rem, 3vw + .02rem, 2rem);
+    font-weight: bold;
+    text-decoration: none;
+}
+.thirdRow > *:hover{
+    color: blue;
+    text-shadow: 0 0 3px black;
+}
+.neonRed{
+    color:  white !important;
+    text-shadow: 0 0 20px red;
+}
+.neonRed_hover:hover{
+    color:  white !important;
+    text-shadow: 0 0 20px red;
+}
+.neonCyan_hover:hover{
+    color: white !important;
+    text-shadow: 0 0 3px rgb(0, 89, 255), 0 0 13px rgb(0, 89, 255), 0 0 23px rgb(0, 89, 255);
+}

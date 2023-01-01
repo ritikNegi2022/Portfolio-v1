@@ -1,0 +1,89 @@
+.contactsContainer {
+  flex: 1;
+  display: flex;
+}
+.title {
+  font-size: 2rem;
+}
+.instagram > h1,
+.email > h1 {
+  font-size: 1.7rem;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.contacts > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts > section > a {
+  width: fit-content;
+}
+.linkImage {
+  width: 20vh;
+}
+
+.contacts > section > a > .linkImage {
+  padding: 1rem;
+}
+.selectabel {
+  user-select: all !important;
+  -moz-user-select: all !important;
+  -ms-user-select: all !important;
+  -webkit-user-select: all !important;
+}
+@media (max-width: 650px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .instagram > h1,
+  .email > h1 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 490px) {
+  .title {
+    font-size: 1rem;
+  }
+  .instagram > h1,
+  .email > h1 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 330px) {
+  .title {
+    font-size: 0.7rem;
+  }
+  .instagram > h1,
+  .email > h1 {
+    font-size: 0.7rem;
+  }
+}
+.hotPink {
+  color: #e80071;
+  text-shadow: 0 0 3px black;
+}
+.neonHotPink {
+  color: white;
+  text-shadow: 0 0 10px #e80071, 0 0 10px #e80071, 0 0 10px #e80071;
+}
+.orange {
+  color: #f96854;
+  text-shadow: 0 0 3px black;
+}
+.neonOrange {
+  color: white;
+  text-shadow: 0 0 10px #f96854, 0 0 10px #f96854, 0 0 10px #f96854;
+}
+.cyan {
+  color: cyan;
+  text-shadow: 0 0 3px black;
+}
+.neonCyan {
+  color: white;
+  text-shadow: 0 0 10px cyan, 0 0 10px cyan, 0 0 10px cyan;
+}
